@@ -12,11 +12,19 @@ const App = () => {
         street: 'NTT',
         number: 12
     }
+
+const AddNewTodo = (name) => {
+    alert(`ten toi la: ${name}`)
+} 
+
+
     return (
         <>
             <div className="todo-container">
                 <div className="todo-title">Todo list</div>
-                <TodoNew />
+                <TodoNew
+                AddNewTodo = {AddNewTodo}
+                />
                 <TodoData 
                 name = {name}
                 age = {age}
