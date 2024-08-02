@@ -13,9 +13,11 @@ const App = () => {
         number: 12
     }
 
-const AddNewTodo = (name) => {
-    alert(`ten toi la: ${name}`)
-} 
+    const AddNewTodo = () => {
+        alert(`ten toi la:`)
+    }
+
+
 
 
     return (
@@ -23,15 +25,15 @@ const AddNewTodo = (name) => {
             <div className="todo-container">
                 <div className="todo-title">Todo list</div>
                 <TodoNew
-                AddNewTodo = {AddNewTodo}
+                    AddNewTodo={AddNewTodo}
                 />
-                <TodoData 
-                name = {name}
-                age = {age}
-                address = {address}
+                <TodoData
+                    name={name}
+                    age={age}
+                    address={address}
                 />
                 <div className='todo-image'>
-                <img src={reactLogo} className="logo react" alt="React logo" />
+                    <img src={reactLogo} className="logo react" alt="React logo" />
                 </div>
             </div>
         </>
