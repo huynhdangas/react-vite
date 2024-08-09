@@ -8,11 +8,7 @@ import { useState } from 'react';
 
 const App = () => {
 
-    const [todoList, setTodoList] = useState([
-        { id: 1, name: 'Learning react' },
-        { id: 2, name: 'Learning react 2' }
-
-    ])
+    const [todoList, setTodoList] = useState([])
 
     const name = 'Dang dep trai'
     const age = 25
@@ -26,10 +22,10 @@ const App = () => {
     }
 
     const AddNewTodo = (name) => {
-        const newTodo = [{
+        const newTodo = {
             id: randomIntFromInterval(1, 1000000),
             name: name
-        }]
+        }
 
         setTodoList([...todoList, newTodo])
 
