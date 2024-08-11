@@ -10,12 +10,7 @@ const App = () => {
 
     const [todoList, setTodoList] = useState([])
 
-    const name = 'Dang dep trai'
-    const age = 25
-    const address = {
-        street: 'NTT',
-        number: 12
-    }
+
 
     const randomIntFromInterval = (min, max) => { // min and max included
         return Math.floor(Math.random() * (max - min + 1) + min);
@@ -42,9 +37,6 @@ const App = () => {
                     AddNewTodo={AddNewTodo}
                 />
                 <TodoData
-                    name={name}
-                    age={age}
-                    address={address}
                     todoList={todoList}
                 />
                 <div className='todo-image'>
